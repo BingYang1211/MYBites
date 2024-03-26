@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AboutUsFragment"
+    android:background="#EFDAA7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/aboutustoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/brown_pink"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/aboutustitle"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/hello_about_fragment"
+                android:textColor="@color/brown"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@id/aboutustoolbar"
+                app:layout_constraintTop_toTopOf="@id/aboutustoolbar"
+                tools:layout_editor_absoluteX="20dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="370dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.371"
+            app:srcCompat="@drawable/panel2" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="372dp"
+            android:fontFamily="@font/opensans_bold"
+            android:justificationMode="inter_word"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="@string/aboutUsDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#483E35"
+            android:textSize="16.9sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.571" />
+
+        <ImageButton
+            android:id="@+id/directionOneBtn"
+            android:layout_width="367dp"
+            android:layout_height="150dp"
+            android:contentDescription="Map Button"
+            android:fontFamily="@font/opensans_extrabold"
+            android:src="@drawable/pic_klcc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.245" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

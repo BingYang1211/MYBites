@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">MYBites</string>
+    <string name="panel_content_description">Panel</string>
+    <string name="title_content_description">Title</string>
+    <string name="email">Email</string>
+    <string name="hint_email">Enter Your Email</string>
+    <string name="hint_name">Enter Your Name</string>
+    <string name="password">Password</string>
+    <string name="hint_password">Enter Your Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="hint_address">Enter Your Address</string>
+
+    <!-- HOME -->
+    <string name="home">Home</string>
+    <string name="hello_home_fragment">Hello</string>
+    <string name="hello2_home_fragment">Foodie!</string>
+    <string name="home_fragment_description">Welcome to MYBites🥗🍚🍝</string>
+
+    <!-- ABOUT US -->
+    <string name="about">About Us</string>
+    <string name="hello_about_fragment">About Us</string>
+    <string name="aboutUsDescription">Welcome to MyBites, your culinary companion celebrating Malaysia\'s diverse flavors. Established in 2023 at KLCC, Kuala Lumpur, we\'re your go-to app for authentic Malay, Chinese, and Indian recipes. Immerse yourself in the rich tapestry of Malaysian cuisine, exploring a curated collection of dishes. Join our community of food enthusiasts and, if you\'re in KL, visit our physical shop for premium groceries. MyBites is more than an app; it\'s a flavorful journey through Malaysia\'s culinary heritage! Click the map below to find out our location!</string>
+
+
+    <!-- ACCOUNT -->
+    <string name="account">Account</string>
+    <string name="hello_account_fragment">My Account</string>
+    <string name="username">Name</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="addresses">Addresses</string>
+    <string name="logout">Logout</string>
+
+    <!-- PROFILE -->
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="home_search">Search for Recipes &amp; Groceries</string>
+    <string name="recipes">Recipes</string>
+    <string name="groceries">Groceries</string>
+    <string name="recipes_tab">Recipes</string>
+    <string name="groceries_tab">Groceries</string>
+
+    <!-- RECIPES -->
+    <string name="recipe_search">Search for Recipes</string>
+    <string name="groceries_search">Search for Groceries</string>
+    <string name="malay">Malay</string>
+    <string name="chinese">Chinese</string>
+    <string name="indian">Indian</string>
+    <string name="dessert">Desserts</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

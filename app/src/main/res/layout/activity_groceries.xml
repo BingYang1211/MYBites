@@ -1,0 +1,108 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context="com.example.mybites.GroceriesActivity">
+
+    <!-- Item Image -->
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:src="@drawable/pizza_sample"
+        android:background="#F6F6F6"
+        android:scaleType="centerCrop"
+        android:hapticFeedbackEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Shade -->
+    <ImageView
+        android:id="@+id/shade"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_btm_overlay"
+        app:layout_constraintBottom_toBottomOf="@+id/item_image"
+        app:layout_constraintEnd_toEndOf="@+id/item_image"
+        app:layout_constraintStart_toStartOf="@+id/item_image" />
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:clickable="true"
+        android:hapticFeedbackEnabled="true"
+        android:padding="4dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/card_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_image" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/CategoryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="Sample Title"
+        android:textColor="@color/brown"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_image" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="7.50"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CategoryTitle" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensans_extrabold"
+        android:text="Description"
+        android:textColor="@color/brown"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <!-- Description Data -->
+    <TextView
+        android:id="@+id/description_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Sample Details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

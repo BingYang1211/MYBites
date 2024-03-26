@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment"
+    android:background="#EFDAA7"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/brown_pink"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/bookmarktitle"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_bold"
+                android:text="@string/hello_account_fragment"
+                android:textColor="@color/brown"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@id/toolbar"
+                app:layout_constraintTop_toTopOf="@id/toolbar"
+                tools:layout_editor_absoluteX="20dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Name:"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintHorizontal_bias="0.156"
+            app:layout_constraintStart_toStartOf="@+id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageView
+            android:id="@+id/namefield"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel3"
+            app:layout_constraintEnd_toEndOf="@+id/titleName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/titleName"
+            app:layout_constraintTop_toBottomOf="@+id/titleName" />
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="name"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/namefield"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="@+id/namefield"
+            app:layout_constraintTop_toBottomOf="@+id/titleName" />
+
+        <TextView
+            android:id="@+id/titleEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Email:"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profileName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/namefield"
+            app:layout_constraintTop_toBottomOf="@+id/namefield" />
+
+        <ImageView
+            android:id="@+id/emailfield"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel3"
+            app:layout_constraintEnd_toEndOf="@+id/titleEmail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/titleEmail"
+            app:layout_constraintTop_toBottomOf="@+id/titleEmail" />
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="email"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/emailfield"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="@+id/emailfield"
+            app:layout_constraintTop_toBottomOf="@+id/titleEmail" />
+
+        <TextView
+            android:id="@+id/titlePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Password:"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/emailfield"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/emailfield"
+            app:layout_constraintTop_toBottomOf="@+id/emailfield" />
+
+        <ImageView
+            android:id="@+id/passwordfield"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel3"
+            app:layout_constraintEnd_toEndOf="@+id/titlePassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/titlePassword"
+            app:layout_constraintTop_toBottomOf="@+id/titlePassword" />
+
+        <TextView
+            android:id="@+id/profilePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="password"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordfield"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="@+id/passwordfield"
+            app:layout_constraintTop_toBottomOf="@+id/titlePassword" />
+
+        <TextView
+            android:id="@+id/titleAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="Address:"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/passwordfield"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/passwordfield"
+            app:layout_constraintTop_toBottomOf="@+id/passwordfield" />
+
+        <ImageView
+            android:id="@+id/addressfield"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/panel3"
+            app:layout_constraintEnd_toEndOf="@+id/titleAddress"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/titleAddress"
+            app:layout_constraintTop_toBottomOf="@+id/titleAddress" />
+
+        <TextView
+            android:id="@+id/profileAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/opensans_bold"
+            android:text="address"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/addressfield"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="@+id/addressfield"
+            app:layout_constraintTop_toBottomOf="@+id/titleAddress" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="154dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn1"
+            android:fontFamily="@font/opensans_extrabold"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="154dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn2"
+            android:fontFamily="@font/opensans_extrabold"
+            android:text="Logout"
+            android:textColor="@color/brown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

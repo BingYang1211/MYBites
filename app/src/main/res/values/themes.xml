@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MYBites" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowBackground">@drawable/bg</item>
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryVariant">@color/brown_pink</item>
+        <item name="colorOnPrimary">@color/brown</item>
+
+        <item name="colorSecondary">@color/brown</item>
+        <item name="colorSecondaryVariant">@color/pink</item>
+        <item name="colorOnSecondary">@color/brown_pink</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Theme.MYBites" parent="Base.Theme.MYBites" />
+    <style name="TabLayout" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>

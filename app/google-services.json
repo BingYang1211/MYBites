@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "591170335168",
+    "project_id": "mybites-ca5d7",
+    "storage_bucket": "mybites-ca5d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591170335168:android:3509c276056b7467489825",
+        "android_client_info": {
+          "package_name": "com.example.mybites"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCUR6TWRmFlN6UtfW-0ici5j6LzE0JB8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
